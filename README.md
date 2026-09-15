@@ -5,9 +5,27 @@
 [![ADK 2.0](https://img.shields.io/badge/ADK-2.0%20Graph%20Workflows-34A853?style=for-the-badge&logo=python&logoColor=white)](https://github.com/google/adk)
 [![Antigravity](https://img.shields.io/badge/Antigravity-Agentic%20IDE%20%26%20CLI-EA4335?style=for-the-badge)](https://antigravity.google/)
 
-Welcome to the comprehensive implementation repository for **5-Day AI Agents: Intensive Vibe Coding Course With Google** (held June 15 – 19, 2026 and available as a self-paced Learn Guide).
+Welcome to the official implementation repository for the **5-Day AI Agents: Intensive Vibe Coding Course With Google** (held June 15 – 19, 2026 and ongoing as a self-paced Learn Guide).
 
-This repository contains multi-agent workflows, security guardrail frameworks, ambient event triggers, and LLM-as-judge evaluation harnesses built using **Google Agent Development Kit (ADK 2.0)**, **Antigravity IDE/CLI**, and **Gemini 2.5 Flash**.
+This repository contains production-ready multi-agent workflows, pre-LLM security screens, ambient Pub/Sub webhooks, and local LLM-as-judge evaluation frameworks developed using **Google Agent Development Kit (ADK 2.0)**, **Antigravity 2.0 IDE/CLI**, and **Gemini 2.5 Flash**.
+
+---
+
+## 📚 Course Overview & Learning Path
+
+Developed by Google researchers and engineers, this intensive course explores building autonomous AI agents where natural language acts as the primary programming interface ("vibe coding").
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 5-Day AI Agents Course Journey & Architecture Map                           │
+├───────────┬───────────────────────────────────┬─────────────────────────────┤
+│ Day 1     │ Intro to Agents & Vibe Coding     │ SDLC, Antigravity 2.0, IDE  │
+│ Day 2     │ Tools & Interoperability          │ MCP, A2A, A2UI, Agents CLI  │
+│ Day 3     │ Agent Skills & Memory             │ Dynamic Context, SKILL.md   │
+│ Day 4     │ Security & Local Evaluations      │ PII Redaction, LLM-as-Judge │
+│ Day 5     │ Spec-Driven Production            │ Telemetry, Webhooks, A2A    │
+└───────────┴───────────────────────────────────┴─────────────────────────────┘
+```
 
 ---
 
@@ -51,59 +69,70 @@ flowchart TD
 | Agent Project | Directory | Core Architecture & Key Features |
 | :--- | :--- | :--- |
 | **Hybrid Customer Support Agent** | [`customer_support_agent/`](file:///c:/Users/avnis/OneDrive/Documents/Kaggle%20x%20Google/Kaggle%20x%20Google%20day%203/customer_support_agent) | • Zero-LLM cost Python keyword classifier<br>• Dynamic router & static fallback decline node<br>• Gemini 2.5 Flash shipping FAQ agent<br>• Function calling tool (`track_package`) |
-| **Ambient Expense Approval Agent** | [`ambient-expense-agent/`](file:///c:/Users/avnis/OneDrive/Documents/Kaggle%20x%20Google/Kaggle%20x%20Google%20day%203/ambient-expense-agent) | • Code-based triage (<$100 Auto-Approved, >=$100 HITL)<br>• Pre-LLM Security Screen (PII redaction & Injection interception)<br>• Pub/Sub webhook trigger (`fast_api_app.py`) & HITL `/resume`<br>• Custom local LLM-as-judge evaluation runner (`run_eval.py`) |
+| **Ambient Expense Approval Agent** | [`ambient-expense-agent/`](file:///c:/Users/avnis/OneDrive/Documents/Kaggle%20x%20Google/Kaggle%20x%20Google%20day%203/ambient-expense-agent) | • Code-based triage (<$100 Auto-Approved, >=$100 HITL)<br>• Pre-LLM Security Screen (PII redaction & Injection interception)<br>• Pub/Sub webhook trigger (`fast_api_app.py`) & HITL `/resume`<br>• Interactive Glassmorphic Manager Dashboard UI (`/dashboard`)<br>• Custom local LLM-as-judge evaluation runner (`run_eval.py`) |
 | **Enterprise Expense Agent & Telemetry** | [`expense-agent/`](file:///c:/Users/avnis/OneDrive/Documents/Kaggle%20x%20Google/Kaggle%20x%20Google%20day%203/expense-agent) | • OpenTelemetry Cloud Trace & BigQuery logging (`telemetry.py`)<br>• Reasoning Engine Adapter (`reasoning_engine_adapter.py`)<br>• A2A Protocol inspector support<br>• End-to-end integration test runner (`test_server_e2e.py`) |
 | **Secure Shopping Assistant** | `shopping-assistant/` | • TDD Planning Gate with secure coding standards (`CONTEXT.md`)<br>• Custom workspace STRIDE Threat Modeling Skill (`SKILL.md`)<br>• Single-use discount code redemption tool<br>• Automated pre-commit security gating (Semgrep & pytest) |
 
 ---
 
-## 📚 5-Day Intensive Curriculum Breakdown
+## 📋 Assignment Tracking Checklist
 
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 5-Day AI Agents Course Journey                                              │
-├───────────┬───────────────────────────────────┬─────────────────────────────┤
-│ Day 1     │ Intro to Agents & Vibe Coding     │ SDLC, Antigravity 2.0, IDE  │
-│ Day 2     │ Tools & Interoperability          │ MCP, A2A, A2UI, Agents CLI  │
-│ Day 3     │ Agent Skills & Memory             │ Dynamic Context, SKILL.md   │
-│ Day 4     │ Security & Local Evaluations      │ PII Redaction, LLM-as-Judge │
-│ Day 5     │ Spec-Driven Production            │ Telemetry, Webhooks, A2A    │
-└───────────┴───────────────────────────────────┴─────────────────────────────┘
-```
+Use this checklist to track your completion of all course units and hands-on codelabs:
 
-### Day 1: Introduction to Agents & Vibe Coding
-- **Concepts**: Transitioning from text completions to intent-driven vibe coding and agentic engineering. Compressing the software development life cycle (SDLC) using natural language orchestrators.
-- **Hands-on**: Setting up Antigravity 2.0, IDE, and CLI. Prototyping applications in Google AI Studio.
+- [x] **Day 1: Introduction to Agents & Vibe Coding**
+  - [x] Read *"The New SDLC with Vibe Coding"* whitepaper
+  - [x] Listen to Unit 1 summary podcast episode
+  - [x] Complete codelab: *Get started with Antigravity 2.0 and IDE*
+  - [x] Complete codelab: *Build a Web Application in AI Studio and Deploy to Cloud Run*
+  - [x] Watch Day 1 livestream recording
 
-### Day 2: Agent Tools & Interoperability
-- **Concepts**: Open standards for tool integration. Model Context Protocol (MCP) connecting models to data sources; Agent-to-Agent (A2A) machine communication; Agent-to-User Interface (A2UI) generative UI.
-- **Hands-on**: Integrating the Google Developer Knowledge MCP server with Antigravity to eliminate hallucinations and retrieve canonical documentation.
+- [x] **Day 2: Agent Tools & Interoperability**
+  - [x] Read *"Agent Tools & Interoperability"* whitepaper
+  - [x] Listen to Unit 2 summary podcast episode
+  - [x] Complete codelab: *Get started with Antigravity CLI*
+  - [x] Complete codelab: *Explore Google Developer Knowledge MCP server in Google Antigravity*
+  - [x] Watch Day 2 livestream recording
 
-### Day 3: Agent Skills & Dynamic Context
-- **Concepts**: Eliminating "context rot" through portable Agent Skills directories centered around `SKILL.md` files. Progressive disclosure to keep system prompts lightweight.
-- **Hands-on**: Building local workspace skills, governing development via `agents-cli`, and scaffolding graph workflow agents.
+- [x] **Day 3: Agent Skills**
+  - [x] Read *"Agent Skills"* whitepaper
+  - [x] Listen to Unit 3 summary podcast episode
+  - [x] Complete codelab: *Explore how Skills work in Antigravity*
+  - [x] Complete codelab: *Build agents in Antigravity with Agents CLI and ADK*
+  - [x] Watch Day 3 livestream recording
 
-### Day 4: Vibe Coding Agent Security & Evaluation
-- **Concepts**: Continuous "Effective Trust" and 7-pillar security architecture. Defenses against prompt injection, PII leaks, and dependency hallucination. OpenTelemetry trajectory evaluation.
-- **Hands-on**: Building an Ambient Expense Agent with Human-In-The-Loop (HITL) triage. Creating pre-LLM security screens for SSN redaction and automated LLM-as-judge evaluation harnesses (`run_eval.py`).
+- [x] **Day 4: Vibe Coding Agent Security and Evaluation**
+  - [x] Read *"Vibe Coding Agent Security and Evaluation"* whitepaper
+  - [x] Listen to Unit 4 summary podcast episode
+  - [x] Complete codelab: *Build an expense-approval agent with human-in-the-loop triage*
+  - [x] Complete codelab: *Write Secure AI Code: Automated Threat Scans, Safety Guards, and Security Testing*
+  - [x] Watch Day 4 livestream recording
 
-### Day 5: Spec-Driven Production Grade Development
-- **Concepts**: Spec-Driven Development (SDD) using Gherkin behavior specifications. Asynchronous event topologies (Pub/Sub, Eventarc).
-- **Hands-on**: Packaging ADK 2.0 workflows with FastAPI servers, instrumenting OpenTelemetry tracing, and integrating A2A Protocol inspectors.
+- [x] **Day 5: Spec-Driven Production Grade Development**
+  - [x] Read *"Spec-Driven Production Grade Development"* whitepaper
+  - [x] Listen to Unit 5 summary podcast episode
+  - [x] Complete codelab: *Deploy and host your AI agents on Google Cloud*
+  - [x] Complete codelab: *Build a front-end web app and link it to your cloud-hosted AI agent*
+  - [x] Watch Day 5 livestream recording
+
+- [x] **Capstone Project**
+  - [x] Architect & build multi-agent workflow
+  - [x] Implement HITL triage & security screen
+  - [x] Submit writeup & demo on Kaggle
 
 ---
 
-## 🚨 Production Deployment Note & Local Strategy
+## 🚨 Production Deployment Note & Local Fallback Strategy
 
 > [!NOTE]
-> **Cloud Console Deployment Notice & Local Fallback Execution Architecture:**
-> During the hands-on deployment phase to Google Cloud Console (Agent Runtime / Cloud Run), authentication and IAM permission limits were encountered in local sandbox environments.
+> **Cloud Console Deployment Notice & Local Execution Architecture:**
+> During the hands-on deployment phase to Google Cloud Console (Agent Runtime / Cloud Run), authentication and IAM permission restrictions were encountered in local sandbox environments.
 >
 > **Local Production Fallback Strategy Implemented:**
 > To ensure 100% functionality without requiring cloud billing or active GCP project permissions, all workflows in this repository have been decoupled into **pure local execution harnesses**:
 > 1. **Local Async Trigger Webhooks**: Service endpoints (`fast_api_app.py`) powered by FastAPI and Uvicorn running on `http://127.0.0.1:8080`.
-> 2. **Local AI Studio Authentication**: Using Gemini API keys (`GEMINI_API_KEY`) with `GOOGLE_GENAI_USE_VERTEXAI=False`.
-> 3. **Local LLM-as-Judge Evaluators**: Custom evaluator runners (`tests/eval/run_eval.py`) that evaluate traces directly using Gemini 2.5 Flash without relying on GCP Vertex AI project billing validation.
+> 2. **Local Glassmorphic Manager UI**: Interactive web interface at `http://127.0.0.1:8080/dashboard` for testing Pub/Sub event ingestion and single-click HITL approvals.
+> 3. **Local AI Studio Authentication**: Authenticated directly via Gemini API keys (`GEMINI_API_KEY`) with `GOOGLE_GENAI_USE_VERTEXAI=False`.
+> 4. **Local LLM-as-Judge Evaluators**: Custom evaluator runners (`tests/eval/run_eval.py`) that evaluate traces directly using Gemini 2.5 Flash without relying on GCP Vertex AI project billing validation.
 
 ---
 
@@ -133,14 +162,16 @@ cd customer_support_agent
 agents-cli playground
 ```
 
-### 3. Running the Ambient Expense Approval Agent & Webhooks
+### 3. Running the Ambient Expense Approval Agent & Web Manager Dashboard
 ```bash
 # Navigate to the Ambient Expense Agent directory
 cd ambient-expense-agent
 
-# Start the local FastAPI webhook server on port 8080
+# Start the local FastAPI service on port 8080
 python -m uvicorn expense_agent.fast_api_app:app --host 127.0.0.1 --port 8080
 ```
+Open your browser to:
+👉 **Web Manager Dashboard**: [http://127.0.0.1:8080/dashboard](http://127.0.0.1:8080/dashboard)
 
 #### Triggering Pub/Sub Submissions via `curl`
 ```bash
@@ -194,10 +225,29 @@ Below are the automated LLM-as-judge evaluation results generated across 5 diver
 
 - **Capstone Project Live Period**: June 19, 2026 – July 6, 2026 (11:59 PM PT)
 - **Badges & Recognition**: Completion awards an official Kaggle Badge and Certificate on your Kaggle profile.
-- **Requirements**:
-  1. Complete Kaggle write-up documenting the agent architecture.
-  2. Video demonstration explaining the agent workflow.
-  3. Public code repository link (GitHub/Kaggle Notebooks).
+- **Submission Requirements**:
+  1. **Kaggle Writeup**: Documented agent architecture with design rationale.
+  2. **Video Explanation**: Screen recording walkthrough demonstrating HITL triage.
+  3. **GitHub Repository**: Complete source code and local test runners.
+
+---
+
+## 🐛 Troubleshooting & FAQ
+
+<details>
+<summary><b>1. DefaultCredentialsError / Google Cloud Authentication</b></summary>
+If you receive <code>google.auth.exceptions.DefaultCredentialsError</code>, set <code>GOOGLE_GENAI_USE_VERTEXAI="False"</code> in your <code>.env</code> file to force the GenAI SDK to use your local <code>GEMINI_API_KEY</code> rather than attempting GCP Cloud authentication.
+</details>
+
+<details>
+<summary><b>2. Rate Limit (429 RESOURCE_EXHAUSTED)</b></summary>
+The Gemini API free tier allows 5 requests per minute per model. When running batch evaluations with <code>run_eval.py</code>, an automatic 12-second backoff delay is built in to maintain API compliance.
+</details>
+
+<details>
+<summary><b>3. npm error Missing script: "dev"</b></summary>
+This repository uses Python <code>uv</code> and <code>uvicorn</code> as the primary web backend runner rather than Node.js npm scripts. Start the web server using <code>python -m uvicorn expense_agent.fast_api_app:app --host 127.0.0.1 --port 8080</code>.
+</details>
 
 ---
 
