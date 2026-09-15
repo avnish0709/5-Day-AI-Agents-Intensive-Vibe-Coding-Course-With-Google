@@ -61,7 +61,34 @@ flowchart TD
         J1 --> K1[Local LLM-as-Judge Evaluation Engine - run_eval.py]
     end
 ```
-
+---
+```
+5-day-ai-agents-google/
+│
+├── day-01-vibe-coding/
+│   ├── ...
+│   └── README.md
+│
+├── day-02-agent-tools/
+│   ├── ...
+│   └── README.md
+│
+├── day-03-agent-skills/
+│   ├── ...
+│   └── README.md
+│
+├── day-04-security-evaluation/
+│   ├── ...
+│   └── README.md
+│
+├── day-05-production-agents/
+│   ├── ...
+│   └── README.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+```
 ---
 
 ## 🤖 Featured AI Agents & Modules Built
